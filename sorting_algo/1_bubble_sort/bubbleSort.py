@@ -19,7 +19,7 @@ def bubbleSort(arr):
 			if arr[i] > arr[i + 1]:
 				swap(arr, i, i + 1)
 				notSorted = True
-			counter += 1
+		counter += 1
 	return arr
 
 def swap(arr, idx1, idx2):
