@@ -23,5 +23,4 @@ def removeKthNodeFromEnd(head, k):
         
     first.next = first.next.next
     return head
-    # return first
         

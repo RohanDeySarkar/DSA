@@ -22,3 +22,7 @@ def shortenPath(path):
 	
 def isImportantToken(token):
 	return len(token) > 0 and token !="."
+
+
+path = "/foo/bar/baz"
+print(shortenPath(path))

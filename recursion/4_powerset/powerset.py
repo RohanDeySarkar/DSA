@@ -1,12 +1,9 @@
 def powerset(arr):
     subsets = [[]]
-    for element in arr:
-        for i in range(len(subsets)):
-            currSubset = subsets[i]
-            subsets.append(currSubset + [element])
-            
+    for i in range(len(arr)):
+        for j in range(len(subsets)):
+            subsets.append([arr[i]] + subsets[j])
     return subsets
-        
 
 arr = [1,2,3]
 print(powerset(arr))

@@ -60,3 +60,19 @@ class JobNode:
 		self.job = job
 		self.deps = []
 		self.numOfPrereqs = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

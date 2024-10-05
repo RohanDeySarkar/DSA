@@ -10,20 +10,34 @@
 #             idx += 1                  
 #     return arr
 
+# def bubbleSort(arr):
+# 	notSorted = True
+# 	counter = 0
+# 	while notSorted:
+# 		notSorted = False
+# 		for i in range(len(arr) - 1 - counter):
+# 			if arr[i] > arr[i + 1]:
+# 				swap(arr, i, i + 1)
+# 				notSorted = True
+# 		counter += 1
+# 	return arr
+
+# def swap(arr, idx1, idx2):
+#     arr[idx1], arr[idx2] = arr[idx2], arr[idx1]
+
+
+
 def bubbleSort(arr):
 	notSorted = True
 	counter = 0
 	while notSorted:
 		notSorted = False
-		for i in range(len(arr) - 1 - counter):
-			if arr[i] > arr[i + 1]:
-				swap(arr, i, i + 1)
+		for i in range(1, len(arr) - counter):
+			if arr[i] < arr[i - 1]:
 				notSorted = True
-			counter += 1
-	return arr
-
-def swap(arr, idx1, idx2):
-    arr[idx1], arr[idx2] = arr[idx2], arr[idx1]                 
+				arr[i], arr[i - 1] = arr[i - 1], arr[i]
+		counter += 1
+	return arr        
                               
     
 arr = [8,5,2,9,5,6,3]

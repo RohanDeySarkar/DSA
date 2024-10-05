@@ -52,3 +52,24 @@ def getCountsAndFirstYPos(pattern, counts):
 		if firstYPos is None and char == "y":
 			firstYPos = i
 	return firstYPos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -30,5 +30,24 @@ class SuffixTrie:
 		return "*" in node
 
 
+class SuffixTrie:
+    def __init__(self, string):
+        self.root = {}
+        self.populateSuffixTrieFrom(string)
+    
+    def populateSuffixTrieFrom(self, string):
+        for i in range(len(string)):
+            current = self.root
+            currLetter = string[i : len(string) + 1]
+            for letter in currLetter:
+                if letter not in current:
+                    current[letter] = {}
+                current = current[letter]
+            current["*"] = True
+
+
+
+
 trie = SuffixTrie("babc")
 print(trie.root)
+

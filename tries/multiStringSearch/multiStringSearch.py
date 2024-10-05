@@ -52,3 +52,20 @@ class Trie:
 				current[string[i]] = {}
 			current = current[string[i]]
 		current["*"] = string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

@@ -14,3 +14,20 @@ def removeDuplicatesFromLinkedList(linkedList):
 		currentNode.next = nextNode
 		currentNode = currentNode.next
 	return linkedList
+
+
+# alternative
+def removeDuplicatesFromLinkedList(linkedList):
+    seenItems = []
+    head = linkedList
+    while head is not None:
+        if head.value not in seenItems:
+            seenItems.append(head.value)
+        head = head.next
+
+    newLinkedList = LinkedList(seenItems[0])
+    newNode = newLinkedList
+    for i in range(1, len(seenItems)):
+        newNode.next = LinkedList(seenItems[i])
+        newNode = newNode.next
+    return newLinkedList

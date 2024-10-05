@@ -13,7 +13,6 @@ class Node:
 			Node.depthFirstSearch(child, arr)
 		return arr
 
-
 # Creating the graph
 # graph = Node("A")
 # graph.addChild("B").addChild("C").addChild("D")

@@ -29,3 +29,5 @@ DIGIT_LETTERS = {
 	"9": ["w", "x", "y", "z"],
 }
 
+number = "1905"
+print(phoneNumberMnemonics(number))

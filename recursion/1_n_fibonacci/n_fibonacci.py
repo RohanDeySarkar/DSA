@@ -1,14 +1,14 @@
 # O(n) time space
-##def getNthFib(n):
-#	memoize = {1:0, 2:1}
-#	return helper(n, memoize)
-#
-#def helper(n, memoize):
-#	if n in memoize:
-#		return memoize[n]
-#	else:
-#		memoize[n] = helper(n-1, memoize) + helper(n-2, memoize)
-#		return memoize[n]
+def getNthFib(n):
+	memoize = {1:0, 2:1}
+	return helper(n, memoize)
+
+def helper(n, memoize):
+	if n in memoize:
+		return memoize[n]
+	else:
+		memoize[n] = helper(n-1, memoize) + helper(n-2, memoize)
+		return memoize[n]
 
 # O(n) time | O(1) space	
 def getNthFib(n):

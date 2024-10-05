@@ -38,3 +38,18 @@ def reverseLinkedList(head):
 		prev = head
 		head = temp
 	return prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
