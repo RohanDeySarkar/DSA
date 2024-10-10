@@ -1,3 +1,4 @@
+# O(nlog(n)) time | O(log(n)) space
 def quickSort(arr):
     helper(arr, 0, len(arr) - 1)
     return arr

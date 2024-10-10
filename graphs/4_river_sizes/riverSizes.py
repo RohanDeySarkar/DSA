@@ -1,3 +1,4 @@
+# O(wh) time | O(wh) space
 def riverSizes(matrix):
 	visited = [[False for col in row] for row in matrix]
 	sizes = []

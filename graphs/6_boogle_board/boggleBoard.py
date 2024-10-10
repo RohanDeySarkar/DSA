@@ -1,5 +1,6 @@
+# O(nm*8^s + ws) time | O(nm + ws) space
 def boggleBoard(board, words):
-    trie = Trie()
+	trie = Trie()
 	for word in words:
 		trie.add(word)
 	

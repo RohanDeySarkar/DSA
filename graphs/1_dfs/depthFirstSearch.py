@@ -1,12 +1,13 @@
 class Node:
 	def __init__(self, name):
-	    self.children = []
-	    self.name = name
+		self.children = []
+		self.name = name
 
 	def addChild(self, name):
-	    self.children.append(Node(name))
-	    return self
+		self.children.append(Node(name))
+		return self
 
+	# O(v + e) time | O(v) space
 	def depthFirstSearch(self, arr):
 		arr.append(self.name)
 		for child in self.children:

@@ -4,14 +4,15 @@
 # Islands are FALSE
 # Replace islands by 0
 
-
+# O(wh) time | O(wh) space
 def removeIslands(matrix):
-    onesConnectedToBorder = [[False for col in row] for row in matrix]
-	
+	onesConnectedToBorder = [[False for col in row] for row in matrix]
+
 	startRow = 0
 	leftCol = 0
 	endRow = len(matrix) - 1 
 	rightCol = len(matrix[0]) - 1
+	
 	# check connectedOnes on 4 borders
 	for row in range(len(matrix)):
 		findConnectedOnes(matrix, row, leftCol, onesConnectedToBorder)

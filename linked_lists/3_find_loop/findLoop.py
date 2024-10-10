@@ -4,7 +4,7 @@ class LinkedList:
         self.value = value
         self.next = None
 
-
+# O(n) time | O(1) space
 def findLoop(head):
     first = head.next
     second = head.next.next

@@ -26,7 +26,7 @@
 #     arr[idx1], arr[idx2] = arr[idx2], arr[idx1]
 
 
-
+# O(n^2) time | O(1) space
 def bubbleSort(arr):
 	notSorted = True
 	counter = 0

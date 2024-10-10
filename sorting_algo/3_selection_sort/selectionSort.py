@@ -13,7 +13,7 @@
 #     arr[idx1], arr[idx2] = arr[idx2], arr[idx1]
 
 
-
+# O(n^2) time | O(1) space
 def selectionSort(arr):
     for i in range(len(arr)):
         currIdx = i

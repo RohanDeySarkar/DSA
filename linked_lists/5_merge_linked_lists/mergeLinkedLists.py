@@ -3,7 +3,7 @@ class LinkedList:
         self.value = value
         self.next = None
 
-
+# O(n + m) time | O(1) space
 def mergeLinkedLists(headOne, headTwo):
     p1 = headOne
     p2 = headTwo

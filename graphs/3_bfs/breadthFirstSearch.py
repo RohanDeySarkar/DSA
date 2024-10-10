@@ -7,11 +7,12 @@ class Node:
         self.children.append(Node(name))
         return self
 
-    def breadthFirstSearch(self, array):
+    # O(v + e) time | O(v) space
+    def breadthFirstSearch(self, arr):
         queue = [self]
         while len(queue) > 0:
-        	currentNode = queue.pop(0)
-        	arr.append(currentNode.name)
-        	for child in currentNode.children:
-        		queue.append(child)
+            currentNode = queue.pop(0)
+            arr.append(currentNode.name)
+            for child in currentNode.children:
+                queue.append(child)
         return arr

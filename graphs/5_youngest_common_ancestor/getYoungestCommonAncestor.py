@@ -4,9 +4,9 @@ class AncestralTree:
         self.name = name
         self.ancestor = None
 
-
+# O(d) time | O(1) space - d = depth (height) of ancestral tree
 def getYoungestCommonAncestor(topAncestor, descendantOne, descendantTwo):
-    depthOne = getDepth(topAncestor, descendantOne)
+	depthOne = getDepth(topAncestor, descendantOne)
 	depthTwo = getDepth(topAncestor, descendantTwo)
 	if depthOne > depthTwo:
 		return getCommon(descendantOne, descendantTwo, depthOne - depthTwo)
@@ -24,7 +24,7 @@ def getCommon(higherDepth, lowerDepth, diff):
 	while diff != 0:
 		higherDepth = higherDepth.ancestor
 		diff -= 1
- 	# both at same depth, check for same ancestor
+ 	# both at same depth, check for same
 	while higherDepth != lowerDepth:
 		higherDepth = higherDepth.ancestor
 		lowerDepth = lowerDepth.ancestor

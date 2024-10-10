@@ -1,9 +1,10 @@
+# O(n) time | O(1) space
 def reverseLinkedList(head):
-    p1 = None
-    p2 = head
-    while p2 is not None:
-        p3 = p2.next
-        p2.next = p1
-        p1 = p2
-        p2 = p3
-    return p1
+    prev = None
+    curr = head
+    while curr is not None:
+        temp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp
+    return prev

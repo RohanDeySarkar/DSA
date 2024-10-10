@@ -17,6 +17,8 @@ def helper(total, arr, idx):
         return  currSum + nextSum
 
 
+# numways dp problem
+
 n = 6
 arr = [2,4,6,10]
 print(subsetSum(n, arr))

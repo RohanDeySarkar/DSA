@@ -3,7 +3,7 @@ class LinkedList:
         self.value = value
         self.next = None
 
-
+# O(n) time | O(1) space
 def removeKthNodeFromEnd(head, k):
     first = head
     second = head
@@ -13,14 +13,13 @@ def removeKthNodeFromEnd(head, k):
         counter += 1
         
     if second is None:
-        head.value = head.next.value
-        head.next = head.next.next
-        return first
+        first.value = first.next.value
+        first.next = first.next.next
+        return head
         
     while second.next is not None:
         second = second.next
         first = first.next
-        
     first.next = first.next.next
     return head
         
