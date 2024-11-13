@@ -8,6 +8,7 @@ def helper(node):
 	
 	leftSumAsBranch, leftMaxPathSum = helper(node.left)
 	rightSumAsBranch, rightMaxPathSum = helper(node.right)
+	
 	maxChildSumAsBranch = max(leftSumAsBranch, rightSumAsBranch)
 	
 	value = node.value
