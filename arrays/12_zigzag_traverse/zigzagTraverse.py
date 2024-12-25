@@ -5,7 +5,7 @@ def zigzagTraverse(arr):
     row, col = 0, 0
     result = []
     goingDown = True
-    while not isOutofbounds(row, col, height, width):
+    while not isOutOfBounds(row, col, height, width):
         result.append(arr[row][col])
         if goingDown:
             # if element in perimeter
@@ -35,7 +35,7 @@ def zigzagTraverse(arr):
     return result
                 
 
-def isOutofbounds(row, col, height, width):
+def isOutOfBounds(row, col, height, width):
     return row < 0 or row > height or col < 0 or col > width
 
 arr = [
