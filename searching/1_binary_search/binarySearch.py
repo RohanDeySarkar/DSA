@@ -24,7 +24,7 @@ def binarySearch(arr, target):
 		if target == num:
 			return middle
 		elif target > num:
-			left = middle +1
+			left = middle + 1
 		else:
 			right = middle - 1
 	return -1
