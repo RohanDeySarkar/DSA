@@ -3,7 +3,7 @@ def smallestSubstringContaining(bigString, smallString):
     
     for i in range(len(bigString)):
         for j in range(i, len(bigString)):
-            if len(bigString[i : j]) >= len(smallString) - 1:
+            if len(bigString[i : j + 1]) >= len(smallString):
                 combinations.append(bigString[i : j + 1])
                 
     length = float("inf")
@@ -18,6 +18,7 @@ def smallestSubstringContaining(bigString, smallString):
         for letter in currCombination:
             if letter == smallString[idx]:
                 idx += 1
+                
             if idx == len(smallString):
                 break
 
